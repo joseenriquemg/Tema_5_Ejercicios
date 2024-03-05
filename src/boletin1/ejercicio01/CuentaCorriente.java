@@ -12,25 +12,28 @@ public class CuentaCorriente {
 	private int saldo;
 	
 	
-	public CuentaCorriente ( String dniTitular, int saldoInicial) {
-		
-		if ( dniTitular != null && !dniTitular.equals(""))
-		this.dni = dniTitular;
-		
-		if ( saldoInicial >= 0)
-		this.saldo = saldoInicial;
-	}
-	
-	public CuentaCorriente ( String dni, String nombre, int saldoInicial) {
+	public CuentaCorriente ( String dni, int saldo) {
 		
 		if ( dni != null && !dni.equals(""))
 		this.dni = dni;
 		
-		if ( nombre != null && !nombre.equals(""))
-		this.nombre = nombre;
+		if ( saldo >= 0)
+		this.saldo = saldo;
+	}
+	
+	public CuentaCorriente ( String dni, String nombre, int saldo) {
 		
-		if ( saldoInicial >= 0)
-		this.saldo = saldoInicial;
+		if ( dni != null && !dni.equals("")) {
+			this.dni = dni;
+		}
+		
+		if ( nombre != null && !nombre.equals("")) {
+			this.nombre = nombre;
+		}
+		
+		if ( saldo >= 0) {
+			this.saldo = saldo;
+		}
 	}
 	
 	public boolean sacarDinero (double cantidad) {

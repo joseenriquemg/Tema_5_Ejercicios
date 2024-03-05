@@ -10,7 +10,7 @@ public class Main {
 		
 		String dni = "";
 		
-		int saldo;
+		double saldo;
 		
 		Scanner sc = new Scanner (System.in);
 		
@@ -24,7 +24,7 @@ public class Main {
 		
 		System.out.println("Introduzca su saldo actual: ");
 		
-		saldo = sc.nextInt();
+		saldo = sc.nextDouble();
 
 	}
 
