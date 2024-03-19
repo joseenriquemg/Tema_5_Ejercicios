@@ -51,18 +51,19 @@ public class Libro {
 		return hayLibros;
 	}
 	
+
+	    public boolean devolucion (int devueltos) {
+	        boolean devolver = false;
+
+	        if (this.ejemplaresPrestados - devueltos > 0) {
+	            devolver = true;
+	            this.ejemplaresPrestados -= devueltos;
+	        }
 	
-	public boolean devolucion () {
-		boolean devueltos = false;
-		
-		
-		
-		return devueltos;
-	}
-	
-	
-	
-	
+	        return devolver;
 	
 	
+	
+	
+}
 }

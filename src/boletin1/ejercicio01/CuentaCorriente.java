@@ -36,6 +36,31 @@ public class CuentaCorriente {
 		}
 	}
 	
+	
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(int saldo) {
+		this.saldo = saldo;
+	}
+
 	public boolean sacarDinero (double cantidad) {
 		boolean hayDinero = false;
 		
@@ -63,6 +88,9 @@ public class CuentaCorriente {
 		
 		System.out.println("Saldo total: " + this.saldo);
 	}
+
+
+	
 	
 	
 	
